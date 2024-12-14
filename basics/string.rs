@@ -27,3 +27,14 @@ fn main(){
     then while printing or doing any operation that involves char, the raw bytes are
     then decoded back to UTF-8 scalar values*/
 }
+
+
+/*
+1. &str is immutable, String is mutable
+2. &str is called String slice
+3. string slice is borrowed, String is owned
+4. string slice is heap or stack allocated, String is heap allocated
+
+&str is owned by the program, meaning it can be destroyed only
+on termination of the program
+*/
