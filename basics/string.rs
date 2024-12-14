@@ -38,3 +38,40 @@ fn main(){
 &str is owned by the program, meaning it can be destroyed only
 on termination of the program
 */
+
+/*
+Must know things about String:
+1. Creating a String
+    String::new();
+    String::from("string literal");
+    "string literal".to_string();
+2. Push
+    .push_str("string slice or literal");
+    .push('c:char');
+3. Length and Capacity
+    .len();
+    .capacity();
+    .reserve(no of bytes);
+    .shrink_to_fit();
+4. Manipulation
+    .trim();
+    .to_lowercase();
+    .to_uppercase();
+5. Checking
+    .contains("slice or literal");
+    .starts_with();
+    .ends_with();
+6. Remove
+    .clear();
+    .remove(index);
+7. Concatenation
+    str1 + str2
+8. Convert to Slice
+    .as_str();
+9. Spliting
+    Vec<&str> = s.split('split char').collect();
+    .split() splits
+    .collect() creates an iterator that returns a Vec<&str>
+10. Replacing
+    .replace("old", "new");
+*/
