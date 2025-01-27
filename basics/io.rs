@@ -47,4 +47,21 @@ fn main(){
             organise code
     3. . operator is used to access methods and members of a
         struct or a enum*/
+
+    
+    /*Now in order to take an integer as input, there's no direct way. Enery userinput is a string.
+    So we must convert that userinput string to integer*/
+
+    {
+        let mut userinput:String = String::new();
+        io::stdin().read_line(&mut userinput).expect("Error reading a string");
+        let convnum:i32 = match userinput.trim().parse(){
+            Ok(num) => num,
+            Err(_) => {
+                println!("Invalid Number");
+                return;
+            }
+        };
+        println!("{convnum}")
+    }
 }
