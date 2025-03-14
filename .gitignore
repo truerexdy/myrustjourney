@@ -22,3 +22,5 @@ Cargo.lock
 
 #Output of manual compilation
 *.out
+
+ignore
